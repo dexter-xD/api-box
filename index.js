@@ -2,4 +2,4 @@
 exports.database = require("./lib/database/database");
 
 // Export the API module
-exports.api = require("./lib/api");
+exports.api = require("./src/api");

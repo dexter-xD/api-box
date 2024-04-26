@@ -1,4 +1,4 @@
-const db = require("../database/database");
+const db = require("../../../lib/database/database");
 
 class Item {
   constructor(name) {
