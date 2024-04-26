@@ -1,8 +1,6 @@
-
 # API-BOX
 
 API-BOX is a lightweight Node.js package that simplifies the process of creating RESTful APIs with pre-configured routes and database integration. It provides a set of pre-built routes for common CRUD operations (Create, Read, Update, Delete), making it easy for developers to set up APIs without writing repetitive code.
-
 
 ## Features
 
@@ -12,7 +10,6 @@ API-BOX is a lightweight Node.js package that simplifies the process of creating
 - Error handling and validation support
 - Middleware support for authentication and authorization (coming soon)
 
-
 ## Installation
 
 Install api-box-dex with npm
@@ -20,15 +17,15 @@ Install api-box-dex with npm
 ```bash
   npm install api-box-dex
 ```
-    
+
 ## Usage/Examples
 
 ### Setting up the Express app
 
 ```javascript
-const express = require('express');
-const bodyParser = require('body-parser');
-const { api } = require('api-box-dex');
+const express = require("express");
+const bodyParser = require("body-parser");
+const { api } = require("api-box-dex");
 ```
 
 ### Create an instance of the Express application:
@@ -44,22 +41,23 @@ app.use(bodyParser.json());
 ```
 
 ### Using the API routes
+
 #### Mount the API routes provided by API-BOX under the '/api' path:
 
 ```javascript
-app.use('/api', api);
+app.use("/api", api);
 ```
 
 ### Starting the server
+
 #### Start the Express server:
 
 ```javascript
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
 ```
-
 
 ## API Reference
 
@@ -95,12 +93,12 @@ app.listen(PORT, () => {
   DELETE /api/items/:id
 ```
 
-
-
-
 ## Contributing
 
 Contributions are always welcome!
 
 You can customize the behavior of API-BOX by extending the provided models or by adding middleware to the Express app.
 
+## License
+
+API-BOX is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
