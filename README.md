@@ -65,31 +65,31 @@ app.listen(PORT, () => {
 
 #### Get all items
 
-```http
+```
   GET /api/items
 ```
 
 #### Get item by ID
 
-```http
+```
   GET /api/items/:id
 ```
 
 #### Create a new item
 
-```http
+```
   POST /api/items
 ```
 
 #### Update an item by ID
 
-```http
+```
   PUT /api/items/:id
 ```
 
 #### Delete an item by ID
 
-```http
+```
   DELETE /api/items/:id
 ```
 
